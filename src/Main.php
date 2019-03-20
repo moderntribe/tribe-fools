@@ -2,16 +2,42 @@
 namespace Modern_Tribe\Tribe_Fools;
 
 class Main {
+	private $global_effects;
+	private $plugin_directory;
+	private $plugin_url;
 	private $settings;
 
+	public function __construct( string $plugin_directory, string $plugin_url ) {
+		$this->plugin_directory = $plugin_directory;
+		$this->plugin_url = $plugin_url;
+	}
+
 	public function init() {
+		$this->global_effects();
 		$this->settings();
 
 		add_action( 'enqueue_block_assets', [ $this, 'block_assets' ] );
 		add_action( 'enqueue_block_editor_assets', [ $this, 'editor_assets' ] );
 	}
 
-	private function settings(): Settings {
+	public function global_effects(): Global_Effects {
+		if ( empty( $this->global_effects ) ) {
+			$this->global_effects = new Global_Effects;
+			$this->global_effects->init();
+		}
+
+		return $this->global_effects;
+	}
+
+	public function plugin_directory(): string {
+		return (string) $this->plugin_directory;
+	}
+
+	public function plugin_url(): string {
+		return (string) $this->plugin_url;
+	}
+
+	public function settings(): Settings {
 		if ( empty( $this->settings ) ) {
 			$this->settings = new Settings;
 			$this->settings->init();
