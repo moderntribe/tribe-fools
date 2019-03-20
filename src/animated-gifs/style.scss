@@ -5,9 +5,10 @@
  */
 
 .wp-block-cgb-animated-gifs {
+	display: inline;
 
 	img {
-		display: block;
-		margin: 0 auto;
+		display: inline;
+		margin: 10px;
 	}
 }

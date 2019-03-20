@@ -1,0 +1,32 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-hit-counter {
+
+	button {
+		display: block;
+		background: transparent;
+		margin-bottom: 10px;
+
+		&.selected {
+			border-color: $red;
+		}
+	}
+
+	span {
+		background-color: black;
+		padding: 10px;
+		font-size: 36px;
+		font-weight: bolder;
+		font-style: italic;
+		color: greenyellow;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

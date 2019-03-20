@@ -1,0 +1,27 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-hit-counter {
+	position: relative;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	span {
+		background-color: black;
+		padding: 10px;
+		font-size: 36px;
+		color: greenyellow;
+		font-weight: bolder;
+		font-style: italic;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
