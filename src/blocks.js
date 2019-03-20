@@ -14,3 +14,4 @@ import './animated-gifs/block.js';
 import './hit-counter/block.js';
 import './webring/block.js';
 import './guest-book/block.js';
+import './browser-compatibility/block.js';

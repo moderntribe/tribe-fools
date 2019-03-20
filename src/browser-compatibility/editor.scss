@@ -1,0 +1,19 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-browser-compatibility {
+
+	button {
+		display: block;
+		background: transparent;
+		margin-bottom: 10px;
+
+		&.selected {
+			border-color: $red;
+		}
+	}
+}
