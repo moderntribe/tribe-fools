@@ -1,15 +1,29 @@
 <?php
 /**
- * Plugin Name: tribe-foolz — CGB Gutenberg Block Plugin
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
- * Description: tribe-foolz — is a Gutenberg plugin created via create-guten-block.
- * Author: mrahmadawais, maedahbatool
- * Author URI: https://AhmadAwais.com/
+ * Plugin Name: Tribe Fools
+ * Plugin URI: https://github.com/moderntribe/tribe-fools
+ * Description: A versatile suite of blocks to enhance your WordPress site; 90s-esque themed by default.
+ * Author: Modern Tribe, Inc | April Fools Division
+ * Author URI: https://tri.be
  * Version: 1.0.0
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
+ * License: GPL3+
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
  *
- * @package CGB
+ *     Tribe Fools - a suite of blocks for WordPress
+ *     Copyright (C) 2019 Modern Tribe, Inc
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 // Exit if accessed directly.
