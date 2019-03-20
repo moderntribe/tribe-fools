@@ -1,0 +1,14 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-webring  {
+	color: blue !important;
+	text-decoration: underline;
+
+	:hover {
+		text-decoration: underline !important;
+	}
+}

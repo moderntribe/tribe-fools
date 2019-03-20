@@ -9,7 +9,7 @@
  * Webpack is compiling as the input file.
  */
 
-import './block/block.js';
 import './under-construction/block.js';
 import './animated-gifs/block.js';
 import './hit-counter/block.js';
+import './webring/block.js';
