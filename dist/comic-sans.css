@@ -1,0 +1,6 @@
+/* We use this because Comic Sans isn't actually available on all OSs */
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+* {
+	font-family: 'Architects Daughter', 'Comic Sans', 'Comic Sans MS', cursive !important;
+}

@@ -6,6 +6,10 @@ class Global_Effects {
 		if ( (bool) get_option( 'tribe_fools_falling_snow' ) ) {
 			add_action( 'wp_enqueue_scripts', [ $this,  'do_falling_snow' ] );
 		}
+
+		if ( (bool) get_option( 'tribe_fools_global_comic_sans' ) ) {
+			add_action( 'wp_enqueue_scripts', [ $this, 'do_comic_sans' ] );
+		}
 	}
 
 	public function do_falling_snow() {
@@ -29,6 +33,13 @@ class Global_Effects {
 					$img_url . '/snow-2.png'
 				]
 			]
+		);
+	}
+
+	public function do_comic_sans() {
+		wp_enqueue_style(
+			'tribe_fools_comic_sans',
+			main()->plugin_url() . '/dist/comic-sans.css'
 		);
 	}
 }
