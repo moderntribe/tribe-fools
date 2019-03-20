@@ -26,12 +26,23 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-// Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+namespace Modern_Tribe\Tribe_Fools;
+
+defined( 'ABSPATH' ) or exit;
+
+function main(): Main {
+	static $main;
+
+	if ( empty( $main ) ) {
+		require_once 'vendor/autoload.php';
+		$main = new Main;
+	}
+
+	return $main;
 }
 
-/**
- * Block Initializer.
- */
-require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
+function bootstrap() {
+	main()->run();
+}
+
+bootstrap();
