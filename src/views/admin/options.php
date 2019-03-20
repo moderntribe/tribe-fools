@@ -4,7 +4,7 @@
 	<form method="post" action="options.php">
 		<?php settings_fields( 'tribe-fools' ); ?>
 
-		<table id="tribe_fools_general_settings">
+		<table id="tribe_fools_general_settings" class="form-table">
 			<?php do_settings_fields( 'tribe-fools-settings', 'general-settings' ); ?>
 		</table>
 
