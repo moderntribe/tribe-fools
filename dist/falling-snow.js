@@ -37,11 +37,11 @@ jQuery( function( $ ) {
 				'left': x,
 				'position': 'fixed',
 				'top': y1,
-				'transform': 'scale(' + scaleFactor + ')',
+				'transform': 'scale(' + scaleFactor + ') rotate(' + rand( 0, 360 ) + 'deg)',
 				'z-index': 10000,
 			} )
 			.animate(
-				{ 'top' : '+=' + y2 },
+				{ 'top': '+=' + y2 },
 				speed,
 				removeSnow
 			)
