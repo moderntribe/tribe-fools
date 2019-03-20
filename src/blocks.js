@@ -13,3 +13,4 @@ import './under-construction/block.js';
 import './animated-gifs/block.js';
 import './hit-counter/block.js';
 import './webring/block.js';
+import './guest-book/block.js';
