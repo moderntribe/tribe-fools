@@ -29,7 +29,7 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
 registerBlockType( 'cgb/under-construction', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'tribe-foolz - Under Construction' ), // Block title.
-	icon: 'tools', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: 'hammer', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'tribe-foolz — CGB Block' ),
