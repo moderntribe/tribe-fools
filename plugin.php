@@ -42,7 +42,7 @@ function main(): Main {
 }
 
 function bootstrap() {
-	main()->run();
+	main()->init();
 }
 
 bootstrap();

@@ -2,9 +2,22 @@
 namespace Modern_Tribe\Tribe_Fools;
 
 class Main {
-	public function run() {
+	private $settings;
+
+	public function init() {
+		$this->settings();
+
 		add_action( 'enqueue_block_assets', [ $this, 'block_assets' ] );
 		add_action( 'enqueue_block_editor_assets', [ $this, 'editor_assets' ] );
+	}
+
+	private function settings(): Settings {
+		if ( empty( $this->settings ) ) {
+			$this->settings = new Settings;
+			$this->settings->init();
+		}
+
+		return $this->settings;
 	}
 
 	/**
