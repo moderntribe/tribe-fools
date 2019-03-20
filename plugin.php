@@ -35,7 +35,7 @@ function main(): Main {
 
 	if ( empty( $main ) ) {
 		require_once 'vendor/autoload.php';
-		$main = new Main;
+		$main = new Main( __DIR__, plugin_dir_url( __FILE__ ) );
 	}
 
 	return $main;
